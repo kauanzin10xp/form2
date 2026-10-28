@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Empregos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2>EmpregaJá</h2>
+    <p>Seu próximo emprego começa aqui!</p>
+  </header>
+
+  <main>
+    <form id="formulario">
+      <h1>Cadastro de Candidato</h1>
+      <p class="descricao">
+        Preencha seus dados para se candidatar às nossas oportunidades.
+      </p>
+
+      <label for="nome">Nome completo</label>
+      <input id="nome" type="text" name="nome"
+        placeholder="Digite seu nome completo" required>
+
+      <label for="email">E-mail</label>
+      <input id="email" type="email" name="email"
+        placeholder="seuemail@email.com" required>
+
+      <label for="telefone">Telefone</label>
+      <input id="telefone" type="tel" name="telefone"
+        placeholder="(00) 00000-0000" required>
+
+      <label for="vaga">Vaga desejada</label>
+      <select id="vaga" name="vaga" required>
+        <option value="">Selecione uma vaga</option>
+        <option value="Auxiliar administrativo">Auxiliar administrativo </option>
+        <option value="Atendente">Atendente</option>
+        <option value="Desenvolvedor web">Desenvolvedor web</option>
+        <option value="Jovem aprendiz">Jovem aprendiz</option>
+        <option value="Vendedor">Vendedor</option>
+      </select>
+
+      <label for="escolaridade">Escolaridade</label>
+      <select id="escolaridade" name="escolaridade" required>
+        <option value="">Selecione sua escolaridade</option>
+        <option value="Ensino fundamental">Ensino fundamental</option>
+        <option value="Ensino médio cursando">Ensino médio cursando</option>
+        <option value="Ensino médio completo">Ensino médio completo</option>
+        <option value="Ensino superior cursando">Ensino superior cursando</option>
+        <option value="Ensino superior completo">Ensino superior completo</option>
+      </select>
+
+      <label for="experiencia">Link para currículo</label>
+      <textarea id="experiencia" name="experiencia"
+        placeholder="Conte um pouco sobre sua experiência ou escreva 'Sem experiência'"
+        rows="4" required></textarea>
+
+      <button type="submit">Enviar candidatura</button>
+
+      <p id="aviso" role="status" aria-live="polite"></p>
+    </form>
+
+<section class="sobre-empresa">
+  <h2>Sobre a EmpregaJá</h2>
+
+  <p>
+    A EmpregaJá é uma plataforma criada para conectar pessoas
+    que procuram emprego com empresas que desejam contratar
+    novos profissionais. Nosso objetivo é facilitar o acesso
+    às oportunidades de trabalho e ajudar candidatos a
+    desenvolverem suas carreiras.
+  </p>
+
+  <div class="informacoes">
+    <div class="info-card">
+      <h3>🎯 Nossa missão</h3>
+      <p>
+        Aproximar candidatos e empresas, facilitando o acesso
+        ao mercado de trabalho.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>💼 Nossas oportunidades</h3>
+      <p>
+        Divulgamos oportunidades em áreas como administração,
+        atendimento, tecnologia, vendas e jovem aprendiz.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>🚀 Nosso compromisso</h3>
+      <p>
+        Oferecer uma experiência simples para quem deseja
+        encontrar novas oportunidades profissionais.
+      </p>
+    </div>
+  </div>
+
+  <h2>Como funciona?</h2>
+
+  <ol>
+    <li>Preencha o formulário com seus dados.</li>
+    <li>Escolha a vaga que deseja buscar.</li>
+    <li>Informe sua escolaridade e experiência.</li>
+    <li>Envie sua candidatura para registrar seus dados.</li>
+  </ol>
+
+  <p class="aviso-empresa">
+    Dica: mantenha suas informações atualizadas e prepare
+    um currículo para futuras oportunidades.
+  </p>
+</section>
+
+
+  </main>
+
+  <footer>
+    <p>EmpregaJá © 2026 — Conectando talentos e oportunidades.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
